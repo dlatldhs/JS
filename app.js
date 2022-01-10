@@ -1,17 +1,6 @@
-const age = parseInt(prompt("How old are you?"));
+const title = document.getElementById('title');// id 가 title 인걸 찾는 중
+//console.dir(title);
+title.innerHTML = "Got you!";// innerText
 
-if(isNaN(age) || age < 0){
-    console.log('Please write a real positive number');
-}
-else if(19>age){
-    console.log('You are too young');
-}
-else if(age >= 19 && age <= 50){
-    console.log('You can drink');
-}
-else if(50 < age && age <= 80){
-    console.log('You should exercise');
-}
-else{
-    console.log('You can do whatever you want.');
-}
+console.log(title.id);
+console.log(title.clasName);
