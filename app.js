@@ -1,6 +1,5 @@
-const title = document.getElementById('title');// id 가 title 인걸 찾는 중
-//console.dir(title);
-title.innerHTML = "Got you!";// innerText
-
-console.log(title.id);
-console.log(title.clasName);
+// const hellos = document.getElementsByClassName('hello');
+// console.log(hellos);
+const t = document.querySelector('.hello h1:first-child');// class = 'hello' in first h1 tag 
+// querySelectorAll <-- 조건에 만족하는 거 다 가져옴
+t.innerHTML = 'hello js!';
