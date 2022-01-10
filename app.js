@@ -1,27 +1,11 @@
-/* 함수 선언 하는 방법
-function sayHi(argument){// argument 인수는 function 안에서만 존재
-    console.log('hello! '+argument);
-}
-sayHi('sion')*/
-// const person = {
-//     name : 'sion',
-//     hi : function sayHi(argument){
-//         console.log('hello '+argument+' good day to study!');
-//     },
-// };
-// person.hi('ZION')
-const calculator ={
-    add : function(a,b){
-        console.log(a+b);
-    },
-    m : function(a,b){
-        console.log(a-b);
-    },
-    wprhq : function(a,b){
-        console.log(a*b);
-    },
-};
-const a = 5, b = 4;
-calculator.add(a,b);
-calculator.m(a,b);
-calculator.wprhq(a,a);
+// type
+// 코드 멈추게 함 
+const age = prompt("How old are you?");// <----- 이게 안끝나면 밑에 있는게 실행안됨
+
+// type 보는거 -- > typeof variableName
+
+console.log(typeof age,typeof parseInt(age));
+console.log(age,parseInt(age));
+// NaN -> Not a Number 
+// type 변환 function string -> int
+console.log(parseInt(age));
