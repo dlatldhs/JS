@@ -10,8 +10,9 @@ function onLoginSubmit(event){
     const userName = loginInput.value;
 }
 
-function handleLinkClik(){
-    alert('clicked!');
+function handleLinkClik(event){
+    event.preventDefault();// 기본적으로 하는 동작
+    console.log(event);
 }
 
 loginForm.addEventListener('submit',onLoginSubmit);
