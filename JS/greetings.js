@@ -2,7 +2,6 @@ const loginInput = document.querySelector('#login-form input');
 const loginForm = document.querySelector('#login-form');
 const greeting = document.querySelector('#greeting');
 
-// this is Strings
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
@@ -11,13 +10,10 @@ function onLoginSubmit(event){
     const username = loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
     localStorage.setItem(USERNAME_KEY,username);
-    paintGreetings(username);
+    paintGreetings();
 }
-/*
-localStorage.setItem("username","ZION") add
-localStorage.removeItem("username") remove 
-*/
-function paintGreetings(username){
+function paintGreetings(){
+    const username = localStorage.getItem(USERNAME_KEY);
     greeting.classList.remove(HIDDEN_CLASSNAME);
     greeting.innerHTML = `Hello ${username} Good Day!`;
 }
@@ -29,8 +25,11 @@ if(localStorageUserNamed === null){
     loginForm.addEventListener('submit',onLoginSubmit);
 }
 else{
-    paintGreetings(localStorageUserNamed);
-    // show main form 
-    // greeting.classList.remove(HIDDEN_CLASSNAME);
-    // greeting.innerHTML = `Hello ${localStorageUserNamed} Good Day!`;
+    // show main form
+    paintGreetings();
 }
+
+/*
+localStorage.setItem("username","ZION") add
+localStorage.removeItem("username") remove 
+*/
