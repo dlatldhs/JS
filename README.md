@@ -1,2 +1,2 @@
-# JS_Study
-`JS 공부중`  To Do List 제작 예정
+# Java Script
+`Java Script` 공부 중 간단하게 To Do List 제작 예정
