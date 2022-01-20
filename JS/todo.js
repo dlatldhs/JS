@@ -1,4 +1,3 @@
-
 const toDoForm = document.querySelector('#todo-form');// todolist input form
 const toDoListForm = document.querySelector('ul#todo-list-form');// ul form
 const toDoInput = toDoForm.querySelector('input');
@@ -14,13 +13,16 @@ function saveToDos(){
 function deleteToDoList(event){
     const li = event.target.parentElement;// event target parentElement -> X 누른 li를 반환해줌
     li.remove();// 세상에서 지워버림
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 function paintToDo(realToDoList){
     const tdl = document.createElement('li');
+    tdl.id = realToDoList.id;
     
     const txtSpan = document.createElement('span');
-    txtSpan.innerHTML = realToDoList;// 받은 toDoList 넣어주기
+    txtSpan.innerHTML = realToDoList.text;// 받은 toDoList 넣어주기
     
     const bt = document.createElement('button');
     bt.innerText = '❌';
@@ -38,8 +40,12 @@ function defaultToDoSubmit(event){// 이 함수는  submit 할 때 기본적으�
     const realToDoList = toDoInput.value;
     //console.log(realToDoList,toDoInput.value);
     toDoInput.value = '';
-    toDos.push(realToDoList);// db 
-    paintToDo(realToDoList);
+    const realToDoTimeList = {
+        text : realToDoList,
+        id : Date.now(),
+    };
+    toDos.push(realToDoTimeList);
+    paintToDo(realToDoTimeList);
     saveToDos();
 }
 
