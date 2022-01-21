@@ -1,3 +1,74 @@
 .hidden{
     display: none;
 }
+h2{
+    font-size: 120px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+
+#greeting{
+    position:absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+#q{
+    font-size: 15px;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    bottom: 3%;
+}
+
+#s{
+    font-size: 14px;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    bottom: 1%;
+}
+
+#weather{
+    float:right;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#todo-form-input{
+    width: 300px;
+    height: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid whit;
+    background-color:transparent;
+    font-size: 18px;
+    text-align: center;
+}
+
+#todo-list-form{
+    position:absolute;
+    left: 49.3%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    text-decoration-line: underline;
+    text-decoration-color: white;    
+}
+#todo-form{
+    position:absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+body{
+    margin: 0 0 0 0;}
+li{
+    list-style-type:none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

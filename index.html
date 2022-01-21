@@ -8,6 +8,12 @@
     <title>hello JS</title>
 </head>
 <body>
+    <header>
+        <div id = 'weather'>
+        <span></span>
+        <span></span>
+    </div>
+    </header>
     <form id = 'login-form' class = 'hidden'><!--required maxlength 는 input을 필수 입력으로 만들어줌-->
         <input required maxlength = '15' type = 'text' placeholder = 'What is your name?'>
         <button>Log In</button>
@@ -15,18 +21,14 @@
     <h2 id = 'clock'>00:00:00</h2>
     <h1 id = 'greeting' class = 'hidden'></h1>
     <form id = 'todo-form'>
-        <input type = 'text' placeholder="해야 할 일들을 입력해주세요." required />
+        <input id = 'todo-form-input' autocomplete="off" type = 'text' placeholder="해야 할 일들을 입력해주세요." required />
     </form>
     <ul id = 'todo-list-form'>
         
     </ul>
     <div id = 'queto'>
-        <span></span>
-        <span></span>
-    </div>
-    <div id = 'weather'>
-        <span></span>
-        <span></span>
+        <span id = 'q'></span>
+        <span id = 's'></span>
     </div>
     <script src = 'JS/greetings.js'></script>
     <script src = 'JS/clock.js'></script>
