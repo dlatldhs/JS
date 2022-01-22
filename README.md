@@ -1,2 +1,10 @@
 # Java Script
-`Java Script` 공부 중 간단하게 To Do List 제작 예정
+`Java Script` 간단한 toDoList 제작함
+> 기능
+> - 시간
+> - ToDoList
+> - 동기부여 명언들(랜덤하게 나옴)
+> - 현 위치에 따른 날씨 정보
+> - 사용자 기억
+
+## 최종화면은 위에 있는 자료를 확인 바람
