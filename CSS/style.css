@@ -52,7 +52,7 @@ h2{
     font-size: 15px;
     margin-top: 10px;
     margin-right: 10px;
-    z-index: 2;
+    z-index: 2;/*position 이 있어야지 적용이 됨 포지션 설정 안하고 하면 안됨*/
 }
 
 #todo-form-input{
@@ -77,6 +77,7 @@ h2{
     text-decoration-color: white;
     z-index: 2;
 }
+
 #todo-form{
     position:absolute;
     left: 50%;
@@ -84,11 +85,22 @@ h2{
     transform: translate(-50%,-50%);
     z-index: 2;
 }
+
 body{
-    margin: 0 0 0 0;}
+    margin: 0 0 0 0;
+    font-family: 'SDSamliphopangche_Outline';
+}
+
 li{
     list-style-type:none;
     margin-top: 8px;
     margin-bottom: 8px;
     z-index: 2;
+}
+
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
