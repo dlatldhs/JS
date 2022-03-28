@@ -9,3 +9,6 @@
 > - 랜덤 배경화면
 
 ## 최종화면은 위에 있는 자료를 확인 바람
+밑에 링크
+
+https://dlatldhs.github.io/JS/
