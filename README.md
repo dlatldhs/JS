@@ -1,5 +1,5 @@
 # Java Script
-`Java Script` 간단한 toDoList 제작함
+`Java Script` 간단한 toDoList 제작함 그리고 JS 과제도 올림
 > 기능
 > - 시간
 > - ToDoList
