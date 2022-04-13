@@ -1,0 +1,20 @@
+button,p {
+    background-color: black;
+    color:white;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+}
+
+body {
+    background-color: white;
+}
+
+.menu_bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
