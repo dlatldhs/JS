@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 315px;
+  height: 315px;
+  margin-bottom: 0px;
+}
+
+#my_name {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+#job {
+  margin: 0 0 0 0;
+  font-size: 12px;
+}
+
+#school_name {
+  font-size: 10px;
+  margin: 8px 0 16px 0;
+}
+
+button {
+  color: black;
+  background-color: white;
+  width: 250px;
+  height: 35px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin: 0 0 32px 0;
+}
+
+p {
+  margin: 0 0 0 0;
+}
+
+#main_body {
+}
